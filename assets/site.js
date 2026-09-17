@@ -3,6 +3,14 @@ const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelectorAll('.nav-list a');
 
+if (window.location.pathname.endsWith('/index.html')) {
+  window.history.replaceState(null, '', `${window.location.pathname.replace(/index\.html$/, '')}${window.location.search}${window.location.hash}`);
+}
+
+document.querySelectorAll('a[href="index.html"]').forEach((link) => {
+  link.setAttribute('href', './');
+});
+
 const updateHeader = () => {
   if (!header) return;
   header.classList.toggle('scrolled', window.scrollY > 24);
