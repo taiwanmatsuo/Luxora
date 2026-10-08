@@ -343,9 +343,10 @@ button, input, textarea { font: inherit; }
 .fireproof-poster a { display: block; border: 1px solid rgba(10,10,10,.14); background: #111; box-shadow: 0 20px 60px rgba(0,0,0,.12); }
 .fireproof-poster img { width: 100%; height: auto; }
 .fireproof-poster figcaption { display: flex; justify-content: space-between; gap: 20px; padding-top: 14px; color: var(--muted); font-size: .75rem; }
-.service-detail-link { display: inline-flex; margin-top: 14px; color: var(--ink); font-size: .78rem; }
-.service-detail-link::after { content: "→"; margin-left: 10px; transition: transform .25s ease; }
-.service-detail-link:hover::after { transform: translateX(6px); }
+.service-detail-link { display: inline-flex; align-items: center; gap: 12px; margin-top: 14px; color: var(--ink); font-size: .78rem; }
+.service-detail-link::after { content: "→"; display: inline-grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border: 1px solid #b68b54; border-radius: 50%; color: #805a28; background: #f0dfc5; transition: transform .25s ease, color .25s ease, background .25s ease; }
+.service-detail-link:hover::after { color: var(--ink); background: var(--warm); transform: translateX(5px); }
+.service-detail-link:focus-visible { outline: 2px solid #805a28; outline-offset: 4px; }
 
 [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
 [data-reveal].revealed { opacity: 1; transform: none; }
