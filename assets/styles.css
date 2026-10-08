@@ -334,6 +334,19 @@ button, input, textarea { font: inherit; }
 .contact-lines span { display: block; margin-bottom: 5px; font-size: .65rem; letter-spacing: .16em; color: rgba(255,255,255,.45); text-transform: uppercase; }
 .parent-link { margin-top: 24px; }
 
+.fireproof-hero { min-height: 48vh; }
+.fireproof-detail { scroll-margin-top: 84px; }
+.fireproof-detail-head { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 42px; }
+.fireproof-detail-head .section-title { font-size: clamp(1.8rem, 3.5vw, 3rem); }
+.fireproof-detail-head p { max-width: 500px; margin: 0; color: #5e5a53; }
+.fireproof-poster { width: min(100%, 760px); margin: 0 auto; }
+.fireproof-poster a { display: block; border: 1px solid rgba(10,10,10,.14); background: #111; box-shadow: 0 20px 60px rgba(0,0,0,.12); }
+.fireproof-poster img { width: 100%; height: auto; }
+.fireproof-poster figcaption { display: flex; justify-content: space-between; gap: 20px; padding-top: 14px; color: var(--muted); font-size: .75rem; }
+.service-detail-link { display: inline-flex; margin-top: 14px; color: var(--ink); font-size: .78rem; }
+.service-detail-link::after { content: "→"; margin-left: 10px; transition: transform .25s ease; }
+.service-detail-link:hover::after { transform: translateX(6px); }
+
 [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
 [data-reveal].revealed { opacity: 1; transform: none; }
 
@@ -383,6 +396,8 @@ button, input, textarea { font: inherit; }
   .service-item { grid-template-columns: 1fr; gap: 14px; }
   .service-item p { grid-column: auto; }
   .contact-card { padding: 28px 22px; }
+  .fireproof-detail-head { align-items: flex-start; flex-direction: column; }
+  .fireproof-poster figcaption { flex-direction: column; gap: 2px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
