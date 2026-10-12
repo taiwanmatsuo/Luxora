@@ -343,6 +343,10 @@ button, input, textarea { font: inherit; }
 .fireproof-poster a { display: block; border: 1px solid rgba(10,10,10,.14); background: #111; box-shadow: 0 20px 60px rgba(0,0,0,.12); }
 .fireproof-poster img { width: 100%; height: auto; }
 .fireproof-poster figcaption { display: flex; justify-content: space-between; gap: 20px; padding-top: 14px; color: var(--muted); font-size: .75rem; }
+.product-sheet-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(32px, 5vw, 64px) 32px; align-items: start; }
+.product-sheet-card { min-width: 0; }
+.product-sheet-card h3 { margin: 0 0 18px; font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.55rem); font-weight: 400; line-height: 1.4; }
+.product-sheet-grid .fireproof-poster { width: 100%; margin: 0; }
 .service-detail-link { display: inline-flex; align-items: center; gap: 12px; margin-top: 14px; color: var(--ink); font-size: .78rem; }
 .service-detail-link::after { content: "→"; display: inline-grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border: 1px solid transparent; border-radius: 50%; color: var(--ink); background: transparent; transition: transform .25s ease, color .25s ease, background .25s ease, border-color .25s ease; }
 .service-detail-link:hover::after { border-color: var(--warm); color: var(--ink); background: var(--warm); transform: translateX(5px); }
@@ -399,6 +403,7 @@ button, input, textarea { font: inherit; }
   .contact-card { padding: 28px 22px; }
   .fireproof-detail-head { align-items: flex-start; flex-direction: column; }
   .fireproof-poster figcaption { flex-direction: column; gap: 2px; }
+  .product-sheet-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
