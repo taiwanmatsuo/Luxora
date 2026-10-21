@@ -341,8 +341,7 @@ button, input, textarea { font: inherit; }
 .fireproof-detail-head p { max-width: 500px; margin: 0; color: #5e5a53; }
 .fireproof-poster { width: min(100%, 760px); margin: 0 auto; }
 .fireproof-poster figcaption { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 14px; color: var(--muted); font-size: .75rem; }
-.product-pdf-viewer { display: block; width: 100%; height: auto; aspect-ratio: 595 / 842; border: 1px solid rgba(10,10,10,.14); background: #fff; box-shadow: 0 20px 60px rgba(0,0,0,.12); }
-.product-pdf-fallback { padding: 20px; }
+.product-sheet-preview { display: block; width: 100%; height: auto; border: 1px solid rgba(10,10,10,.14); background: #fff; box-shadow: 0 20px 60px rgba(0,0,0,.12); }
 .pdf-download-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; padding: 11px 14px; border: 1px solid var(--line); color: var(--ink); background: transparent; font-size: .72rem; letter-spacing: .06em; transition: color .25s ease, background .25s ease, border-color .25s ease; }
 .pdf-download-button:hover, .pdf-download-button:focus-visible { border-color: var(--warm); color: #111; background: var(--warm); }
 .pdf-download-button:focus-visible { outline: 2px solid #805a28; outline-offset: 4px; }
@@ -406,7 +405,6 @@ button, input, textarea { font: inherit; }
   .contact-card { padding: 28px 22px; }
   .fireproof-detail-head { align-items: flex-start; flex-direction: column; }
   .fireproof-poster figcaption { align-items: flex-start; flex-direction: column; gap: 10px; }
-  .product-pdf-viewer { min-height: 420px; }
   .product-sheet-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
