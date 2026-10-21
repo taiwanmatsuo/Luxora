@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; frame-src 'none'; media-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; frame-src 'self'; media-src 'self'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
   <meta name="description" content="モバイルバッテリー用防火布製バッグの製品資料をご覧いただけます。">
@@ -50,13 +50,13 @@
             <p class="eyebrow">Product information</p>
             <h2 class="section-title">製品資料</h2>
           </div>
-          <p>画像をクリックすると、別タブで原寸表示できます。</p>
+          <p>PDFをプレビューし、ボタンからダウンロードできます。</p>
         </div>
-        <figure class="fireproof-poster" data-reveal>
-          <a href="../assets/fireproof-bag-dm-ja.jpg?v=9fce0ee" target="_blank" rel="noopener noreferrer" aria-label="防火布製バッグの製品資料を別タブで拡大表示">
-            <img src="../assets/fireproof-bag-dm-ja.jpg?v=9fce0ee" alt="モバイルバッテリー用防火バッグの日本語製品紹介DM" width="1024" height="1536" fetchpriority="high">
-          </a>
-          <figcaption><span>モバイルバッテリー用 防火布製バッグ</span><span>製品資料を別タブで拡大 ↗</span></figcaption>
+        <figure class="fireproof-poster product-pdf-card" data-reveal>
+          <iframe class="product-pdf-viewer" src="../assets/product-dm/fireproof-bag-ja.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" width="595" height="842" title="モバイルバッテリー用防火布製バッグの製品資料 PDF" loading="lazy">
+            <p class="product-pdf-fallback">PDFを表示できない場合は、<a href="../assets/product-dm/fireproof-bag-ja.pdf">PDFを開いてください</a>。</p>
+          </iframe>
+          <figcaption><span>モバイルバッテリー用 防火布製バッグ</span><a class="pdf-download-button" href="../assets/product-dm/fireproof-bag-ja.pdf" download="Luxora-fireproof-bag-ja.pdf">PDFをダウンロード <span aria-hidden="true">↓</span></a></figcaption>
         </figure>
       </div>
     </section>
